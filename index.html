@@ -9,17 +9,53 @@
     <title>Search</title>
   </head>
   <body>
-    <a style="margin-left: 80%" href="images-search.html">Images</a>
-    <a href="advanced-search.html">Advanced search</a>
+    <!--Header-->
+    <header>
+      <!--Nav panel-->
+      <nav>
+        <ul>
+          <li><a href="images-search.html">Images</a></li>
+          <li><a href="advanced-search.html">Advanced search</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <img class="main-image" src="img\google.gif" alt="Google" />
+    <!--Search block-->
+    <div>
+      <!--Form-->
+      <form action="http://www.google.com/search">
+        <!--Logo block-->
+        <div>
+          <img src="img\google2.gif" alt="Google" />
+        </div>
+        <!-- Search wrapper-->
+        <div>
+          <!--Search block-->
+          <div>
+            <!--Magnifying glass icon-->
+            <div>
+              <img src="./img/s-icon.webp" alt="Magnifying glass icon" />
+            </div>
+            <!--Search input block-->
+            <div>
+              <input class="input-search" type="text" name="q" />
+            </div>
+          </div>
+        </div>
 
-    <form action="http://www.google.com/search">
-      <input class="input-textbox" type="text" name="q" />
-      <div class="button-container">
-        <input type="submit" value="Google Search" />
-        <input type="submit" value="I`m feeling lucky!" name="btnI" />
-      </div>
-    </form>
+        <!--Inputs block (buttons)-->
+        <div>
+          <ul>
+            <li>
+              <input type="submit" value="Google Search" />
+            </li>
+            <li>
+              <input type="submit" value="I`m feeling lucky!" name="btnI" />
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <footer></footer>
   </body>
 </html>
