@@ -9,84 +9,110 @@
   </head>
 
   <body>
-    <!--Header-->
-    <header>
-      <!--Logo image-link-->
+    <div class="wrapper">
+      <!--Header-->
+      <header>
+        <!--Logo image-link-->
+        <div class="header-logo-container"></div>
+        <!--Nav panel-->
+        <div class="img-logo">
+          <a href="index.html"
+            ><img src="img/google_img.png" alt="Google" height="25px"
+          /></a>
+        </div>
+        <div>
+          <ul>
+            <li class="link-list-item">
+              <a class="link-text" href="index.html">Google search</a>
+            </li>
+            <li class="link-list-item">
+              <a class="link-text" href="images-search.html">Google images</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!--App bar-->
       <div>
-        <a href="index.html"><img src="img/google_img.png" alt="Google" /></a>
+        <h1 class="appbar">Advanced search</h1>
       </div>
-      <!--Nav panel-->
-      <nav>
-        <ul>
-          <li><a href="index.html">Google search</a></li>
-          <li><a href="images-search.html">Google images</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!--App bar-->
-    <div>
-      <h1>Advanced search</h1>
-    </div>
 
-    <!--Main search section-->
-    <section>
-      <h2>Find pages with...</h2>
-      <!--Input list-->
-      <div>
-        <form action="http://www.google.ee/search">
-          <div>
-            <ul>
-              <!--List header-->
-              <li>
-                <div>
-                  <div>Find pages with...</div>
-                  <div></div>
-                  <div>To do this in the search box.</div>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div>all these words:</div>
-                  <div><input type="text" name="as_q" /></div>
-                  <div>Type the important words: tri-colour rat terrier</div>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div>this exact word or phrase:</div>
-                  <div><input type="text" name="as_epq" /></div>
-                  <div>Put exact words in quotes: "rat terrier"</div>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div>any of these words:</div>
-                  <div><input type="text" name="as_oq" /></div>
-                  <div>
-                    Type OR between all the words you want: miniature OR
-                    standard
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <div>none of these words:</div>
-                  <div><input type="text" name="as_eq" /></div>
-                  <div>
-                    Put a minus sign just before words that you don't want:
-                    -rodent, -"Jack Russell"
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <!--Inputs block (buttons)-->
+      <!--Main search section-->
+      <section class="main-section">
+        <!--Input list-->
+        <div>
+          <form action="http://www.google.ee/search">
             <div>
-              <input type="submit" value="Advanced Search" />
+              <ul>
+                <!--List header-->
+                <li class="input-list">
+                  <div class="list-table">
+                    <div class="head-left">Find pages with...</div>
+                    <div class="head-center"></div>
+                    <div class="head-right">To do this in the search box.</div>
+                  </div>
+                </li>
+                <li class="input-list">
+                  <div class="list-table">
+                    <div class="left-item">all these words:</div>
+                    <div class="center-item">
+                      <input class="input-text" type="text" name="as_q" />
+                    </div>
+                    <div class="right-item">
+                      Type the important words:
+                      <span class="span-item">tri-colour rat terrier</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="input-list">
+                  <div class="list-table">
+                    <div class="left-item">this exact word or phrase:</div>
+                    <div class="center-item">
+                      <input class="input-text" type="text" name="as_epq" />
+                    </div>
+                    <div class="right-item">
+                      Put exact words in quotes:
+                      <span class="span-item">"rat terrier"</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="input-list">
+                  <div class="list-table">
+                    <div class="left-item">any of these words:</div>
+                    <div class="center-item">
+                      <input class="input-text" type="text" name="as_oq" />
+                    </div>
+                    <div class="right-item">
+                      Type OR between all the words you want:
+                      <span class="span-item">miniature OR standard</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="input-list">
+                  <div class="list-table">
+                    <div class="left-item">none of these words:</div>
+                    <div class="center-item">
+                      <input class="input-text" type="text" name="as_eq" />
+                    </div>
+                    <div class="right-item">
+                      Put a minus sign just before words that you don't want:
+                      <span class="span-item">-rodent, -"Jack Russell"</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!--Inputs block (buttons)-->
+              <div>
+                <input
+                  class="search-advanced-busson"
+                  type="submit"
+                  value="Advanced Search"
+                />
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
-    </section>
+          </form>
+        </div>
+      </section>
+    </div>
     <footer></footer>
   </body>
 </html>
