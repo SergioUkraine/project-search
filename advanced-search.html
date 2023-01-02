@@ -7,15 +7,86 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Advanced search</title>
   </head>
-  <body>
-    <a href="index.html">Google</a>
 
-    <form action="http://www.google.ee/search">
-      <input type="text" name="as_q" />
-      <input type="text" name="as_epq" />
-      <input type="text" name="as_oq" />
-      <input type="text" name="as_eq" />
-      <input type="submit" value="Google Search Images" />
-    </form>
+  <body>
+    <!--Header-->
+    <header>
+      <!--Logo image-link-->
+      <div>
+        <a href="index.html"><img src="img/google_img.png" alt="Google" /></a>
+      </div>
+      <!--Nav panel-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Google search</a></li>
+          <li><a href="images-search.html">Google images</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--App bar-->
+    <div>
+      <h1>Advanced search</h1>
+    </div>
+
+    <!--Main search section-->
+    <section>
+      <h2>Find pages with...</h2>
+      <!--Input list-->
+      <div>
+        <form action="http://www.google.ee/search">
+          <div>
+            <ul>
+              <!--List header-->
+              <li>
+                <div>
+                  <div>Find pages with...</div>
+                  <div></div>
+                  <div>To do this in the search box.</div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div>all these words:</div>
+                  <div><input type="text" name="as_q" /></div>
+                  <div>Type the important words: tri-colour rat terrier</div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div>this exact word or phrase:</div>
+                  <div><input type="text" name="as_epq" /></div>
+                  <div>Put exact words in quotes: "rat terrier"</div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div>any of these words:</div>
+                  <div><input type="text" name="as_oq" /></div>
+                  <div>
+                    Type OR between all the words you want: miniature OR
+                    standard
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div>none of these words:</div>
+                  <div><input type="text" name="as_eq" /></div>
+                  <div>
+                    Put a minus sign just before words that you don't want:
+                    -rodent, -"Jack Russell"
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!--Inputs block (buttons)-->
+            <div>
+              <input type="submit" value="Advanced Search" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer></footer>
   </body>
 </html>
